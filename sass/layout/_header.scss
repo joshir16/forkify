@@ -16,7 +16,7 @@
 
 .search {
   width: 100%;
-  min-height: 25rem;
+  min-height: 30rem;
   height: 100%;
 
   display: flex;
@@ -25,6 +25,7 @@
 
   @media only screen and (max-width: $bp-large) {
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   &__box {
@@ -94,7 +95,7 @@
     text-align: center;
 
     @media only screen and (max-width: $bp-large) {
-      padding: 2rem;
+      padding: 0 2rem;
     }
   }
 }

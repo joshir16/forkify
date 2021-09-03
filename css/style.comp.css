@@ -250,14 +250,15 @@ body {
 
 .search {
   width: 100%;
-  min-height: 25rem;
+  min-height: 30rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
   @media only screen and (max-width: 62.5em) {
     .search {
-      flex-direction: column; } }
+      flex-direction: column;
+      justify-content: space-evenly; } }
   .search__box {
     height: 5rem;
     display: flex;
@@ -302,7 +303,7 @@ body {
     text-align: center; }
     @media only screen and (max-width: 62.5em) {
       .search__heading {
-        padding: 2rem; } }
+        padding: 0 2rem; } }
 
 /** @format */
 .navbar {
