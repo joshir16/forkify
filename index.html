@@ -1,0 +1,317 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Forkify</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <img src="img/logo.png" alt="" class="logo" />
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <button class="nav__btn add-recipe">
+                <span class="material-icons-outlined nav__btn__icon">
+                  note_add
+                </span>
+                <span> Add Recipe </span>
+              </button>
+            </li>
+
+            <li class="nav__item">
+              <button class="bookmark nav__btn">
+                <span class="material-icons-outlined nav__btn__icon">
+                  bookmark_border
+                </span>
+                <span> bookmark </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="search">
+        <div class="search__box">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search over 1,000,000 recipes..."
+          />
+          <button class="search-btn">
+            <span class="material-icons-outlined"> search </span>
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <main class="container">
+      <h3 class="container__heading">pizza recipes</h3>
+
+      <input type="checkbox" name="switch" id="switch" class="switch" />
+
+      <label for="switch" class="switch__label">
+        <span
+          title="Grid-view"
+          class="material-icons-outlined switch__label__grid"
+        >
+          apps
+        </span>
+        <span
+          title="List-view"
+          class="material-icons-outlined switch__label__list"
+        >
+          list_alt
+        </span>
+      </label>
+
+      <!-- ================================================== -->
+      <div class="recipe recipe--grid" id="recipe">
+        <!-- =========================== box 1 -->
+        <div class="recipe__box">
+          <img src="img/pizza-1.jpg" alt="" class="recipe__img" />
+
+          <span class="material-icons-outlined recipe__user"> person </span>
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">Rj Pizza</h2>
+            <h3 class="recipe__info__owner">Rishabh Joshi</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================== box 2-->
+        <div class="recipe__box">
+          <img src="img/pizza-2.jpg" alt="" class="recipe__img" />
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">HOMEMADE PIZZA</h2>
+            <h3 class="recipe__info__owner">John Lorem</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================== box 3-->
+        <div class="recipe__box">
+          <img src="img/pizza-3.jpg" alt="" class="recipe__img" />
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">VEGGIE PIZZA</h2>
+            <h3 class="recipe__info__owner">Lorem Ipsum Dolor</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================== box 4-->
+        <div class="recipe__box">
+          <img src="img/pizza-4.jpg" alt="" class="recipe__img" />
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">VALENTINE PIZZA</h2>
+            <h3 class="recipe__info__owner">Lorem Ipsum</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================== box 5-->
+        <div class="recipe__box">
+          <img src="img/pizza-5.jpg" alt="" class="recipe__img" />
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">GREEK PIZZA</h2>
+            <h3 class="recipe__info__owner">Loremipsum</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================== box 6-->
+        <div class="recipe__box">
+          <img src="img/pizza-6.jpg" alt="" class="recipe__img" />
+
+          <div class="recipe__info">
+            <h2 class="recipe__info__name">PIZZA CASSEROLE</h2>
+            <h3 class="recipe__info__owner">Lorem</h3>
+
+            <p class="recipe__info__time">
+              <span class="material-icons-outlined"> timer </span>
+              30 Minutes
+            </p>
+
+            <a href="#popup" class="recipe__info__link"
+              >Directions
+              <span class="material-icons-outlined"> chevron_right </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe__page">
+        <button class="recipe__page__prev recipe__page__btn" disabled>
+          <span class="material-icons-outlined"> chevron_left </span> Prev
+        </button>
+        <button class="recipe__page__next recipe__page__btn">
+          Next
+          <span class="material-icons-outlined"> chevron_right </span>
+        </button>
+      </div>
+    </main>
+
+    <!-- =============================================================== -->
+
+    <div class="popup" id="popup">
+      <div class="popup__box">
+        <a href="#recipe" class="popup__box__close">
+          <span class="material-icons-outlined span__icon"> cancel </span>
+        </a>
+
+        <!-- ==================================== -->
+        <h2 class="popup__heading">VALENTINE PIZZA</h2>
+
+        <!-- ==================================== -->
+        <div class="popup__header">
+          <p class="recipe__time">
+            <span class="material-icons-outlined span__icon"> timer </span>
+            30 Minutes
+          </p>
+
+          <p class="recipe__serving">
+            <span class="material-icons-outlined span__icon"> people </span>
+            <span> 4 Servings </span>
+            <span class="material-icons-outlined span__icon"
+              >add_circle_outline</span
+            >
+            <span class="material-icons-outlined span__icon"
+              >remove_circle_outline</span
+            >
+          </p>
+
+          <span class="material-icons-outlined recipe__bookmark span__icon">
+            bookmark_border
+          </span>
+        </div>
+
+        <!-- ==================================== -->
+        <div class="ingredients">
+          <h2 class="ingredients__heading">Recipe Ingredients</h2>
+          <ul class="ingredients__list">
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              3 cups bread flour
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              1 envelope active dry yeast
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              1 1/4 cups warm water
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+
+              3 tbsps extra virgin olive oil divided
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              3 tbsps chopped fresh rosemary
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              1 can pizza sauce
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              3 cups shredded mozzarella cheese
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              2 ripe tomatoes sliced
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              1 zucchini sliced
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              15 slices vegetarian pepperoni
+            </li>
+            <li class="ingredients__item">
+              <span class="material-icons-outlined"> chevron_right </span>
+              1 can sliced black olives
+            </li>
+          </ul>
+        </div>
+
+        <!-- ==================================== -->
+
+        <div class="popup__footer">
+          <p class="popup__footer__para">
+            This recipe was carefully designed and tested by All Recipes. Please
+            check out directions at their website.
+          </p>
+          <a href="" class="how-to-cook">How to Cook</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+/** @format */
+
+$bp-huge: 93.75em; // 1500px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 28.75em; // 460px
+
+// //////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+// //////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+:root {
+  transition: all 0.3s;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% --> 1rem = 10px
+  scroll-behavior: smooth;
+
+  // @media only screen and (max-width: $bp-huge) {
+  // }
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43.75%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Ubuntu", sans-serif;
+
+  color: #fff;
+
+  background-color: #222;
+}
