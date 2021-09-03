@@ -255,6 +255,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 62.5em) {
+    .search {
+      flex-direction: column; } }
   .search__box {
     height: 5rem;
     display: flex;
@@ -292,6 +295,14 @@ body {
     align-items: center; }
     .search-btn:hover {
       background-color: #eee; }
+  .search__heading {
+    max-width: 55rem;
+    padding: 5rem;
+    font-size: 3rem;
+    text-align: center; }
+    @media only screen and (max-width: 62.5em) {
+      .search__heading {
+        padding: 2rem; } }
 
 /** @format */
 .navbar {

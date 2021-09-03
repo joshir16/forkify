@@ -23,6 +23,10 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+
   &__box {
     // width: 50rem;
     height: 5rem;
@@ -77,6 +81,20 @@
 
     &:hover {
       background-color: #eee;
+    }
+  }
+
+  // =========================================
+
+  &__heading {
+    max-width: 55rem;
+
+    padding: 5rem;
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 2rem;
     }
   }
 }
