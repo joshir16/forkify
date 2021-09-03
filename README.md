@@ -1,3 +1,3 @@
 <!-- @format -->
 
-https://rishabhjoshi.netlify.app
+https://joshir16.github.io/forkify/
